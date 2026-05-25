@@ -245,25 +245,23 @@ body {
   margin: 20px 0 0 40px;
 }
 
-
 #drop-area {
-  border: 2px dashed #999;
+  border: 2px dashed #6ebceaaf;
   border-radius: 10px;
-  padding: 40px;
-  background: none;
+  padding: 20px;
+  background: rgba(145, 204, 220, 0.336);
   cursor: pointer;
   transition: background 0.3s ease;
-  margin-top: 20px;
-  .drop-text p {
-    font-size: 18px;
-    color: #666;
-    margin-top: 10px;
-    align-items: center;
-  }
+margin-top: 20px;
+  display: flex;              /* Flexbox enable */
+  flex-direction: column;     /* Items vertically stack */
+  align-items: center;        /* Center horizontally */
+  justify-content: center;    /* Center vertically */
+  text-align: center;         /* Text center */
 }
 
 #drop-area:hover {
-  background: #f0f8ff;
+  background: #7494b062;
 
 }
 
@@ -271,18 +269,34 @@ body {
   margin-top: 15px;
   padding: 10px 20px;
   border: none;
-  background: #4CAF50;
+  background: #007bff;
   color: white;
   border-radius: 5px;
   cursor: pointer;
 }
+.area-text-main {
+  font-size: 16px;
+  color: black;
+}
+
+.area-text-note {
+  font-size: 12px;
+  color: black;
+}
+
+.icon {
+  font-size: 45px;   /* emoji ka size bada */
+
+}
 
 #fileSelect:hover {
-  background: #45a049;
+  background: lightblue80;
 }
+
 
 #result {
   margin-top: 20px;
   text-align: left;
 }
+
 
