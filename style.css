@@ -300,7 +300,7 @@ margin-top: 20px;
   text-align: left;
 }
 /* Common container */
-.upload-container {
+/*.upload-container {
   width: 90%;
   margin: 20px auto;
   padding: 20px;
@@ -308,7 +308,7 @@ margin-top: 20px;
 }
 
 /* Drop area */
-#drop-area {
+/*#drop-area {
   border: 2px dashed #999;
   border-radius: 10px;
   padding: 40px;
@@ -320,9 +320,9 @@ margin-top: 20px;
   align-items: center;
   text-align: center;
 }
-
+*/
 /* Button */
-#fileSelect {
+/*#fileSelect {
   margin-top: 15px;
   padding: 10px 20px;
   border: none;
@@ -333,15 +333,15 @@ margin-top: 20px;
 }
 #fileSelect:hover {
   background: rgba(173, 216, 230, 0.8);
-}
+}*/
 
 /* ✅ Responsive text sizes */
-.upload-container h2 {
+/*.upload-container h2 {
   font-size: 24px;
 }
 .upload-container p {
   font-size: 14px;
-}
+} */
 
 /* ✅ Media Queries for smaller screens */
 @media (max-width: 768px) {
