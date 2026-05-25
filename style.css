@@ -187,6 +187,16 @@ body {
   line-height: 1.5;
 }
 
+@media (max-width: 480px) {
+  .hero-text h2 { font-size: 32px; }
+  .hero-text p { font-size: 14px; }
+  .upload-container { padding: 10px; margin: 5px; }
+  #drop-area { padding: 15px; }
+  .action-card { width: 100%; height: auto; }
+}
+@media (max-width: 480px) {
+  .box { min-width: 200px; height: 120px; }
+}
 
 
 /* Responsive */
