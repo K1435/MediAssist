@@ -1,0 +1,288 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f9fbfd;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* equal gap on both sides */
+}
+
+/* Navbar */
+
+/* Navbar sticky */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  transition: all 0.3s ease; /* smooth transition */
+}
+.navbar a {
+  color: #333;                 /* Normal text color */
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;   /* Smooth animation */
+}
+
+.navbar a:hover {
+  background-color: #e6f2ff;   /* Light blue background */
+  color: #000;                 /* Text turns darker */
+ /*s box-shadow: 0 0 8px rgba(0, 153, 255, 0.6);*/ /* Soft glow */
+}
+
+
+
+
+/* Hero box default */
+.hero-box {
+  transition: all 0.5s ease; /* smooth animation */
+}
+
+/* Hero box scroll effect */
+.hero-box.scrolled {
+  margin-top: 0;              /* upar chipak jaaye */
+  border-radius: 0;            /* corners straight ho jaaye */
+  padding: 20px;               /* thoda compact ho */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* shadow add ho */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover { text-decoration: underline; }
+.nav-links .active { border-bottom: 2px solid #007bff; }
+
+/* Hero Section */
+.hero {
+  margin-top: 30px;
+}
+
+.hero-box {
+  background: #eaf3ff;
+  border-radius: 12px; /* rounded corners */
+  padding: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hero-text { max-width: 60%;max-height: fit-content; }
+.hero-text h1 { font-size: 16px; color: #007bff; margin-bottom: 10px; }
+.hero-text h2 { font-size: 60px;color: black; margin-bottom: 20px; }
+.hero-text p1 { margin-bottom: 20px; font-size: 18px;color: gray }
+.hero-text p2 { margin-bottom: 5px; font-size: 14px; color: gray; }
+
+.voice-box {
+  background: #5177a7;
+  color: lightskyblue;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+}
+
+.voice-btn {
+  background: white;
+  color: rgb(126, 145, 151);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.voice-btn:hover { background: #617ef04c; }
+
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-between;  /* left aur right corner se equal gap */
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background:white;   /* blue background */
+  color: gray;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  flex: 1;               /* equal width for all cards */
+  margin: 0 10px;        /* thoda gap between cards */
+  box-shadow: 0 4px 12px gainsboro;
+}
+
+.stat-card h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 20px;
+}
+
+
+/* Quick Actions */
+.quick-actions h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color:#007bff;
+}
+
+.actions-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.action-card {
+  background: white;
+  padding: 30px;          /* andar ka space thoda bada */
+  border-radius: 12px;
+  flex: 1;                /* equal width le */
+  width: 280px;           /* fixed width */
+  height: 250px;          /* fixed height */
+  box-shadow: 0 4px 12px gainsboro;
+  transition: transform 0.3s ease;
+}
+
+.action-card h4 {
+  color: black;
+  margin-bottom: 12px;
+  font-size: 15px;        /* heading thoda bada */
+}
+
+.action-card p {
+  font-size: 15px;        /* text thoda bada */
+  line-height: 1.5;
+}
+
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-box { flex-direction: column; }
+  .hero-text { max-width: 100%; margin-bottom: 20px; }
+  .voice-box { width: 100%; margin-top: 20px; }
+  .stats { flex-direction: column; }
+  .actions-row { flex-direction: column; }
+}
+/* Common Box Style */
+.stat-card, .action-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth animation */
+}
+
+/* Hover Effect */
+.stat-card:hover, .action-card:hover {
+  transform: translateY(-10px);   /* box thoda upar jump kare */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* shadow bhi deep ho */
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;          /* pura viewport cover kare */
+}
+
+.container {
+  max-width: 1200px;     /* content ki width limit */
+  margin: 0 auto;        /* center alignment */
+  padding: 20px;
+}
+
+/* Agar content zyada ho to scroll enable ho */
+body {
+  overflow-y: auto;      /* vertical scroll allow */
+  overflow-x: hidden;    /* horizontal scroll band */
+}
+.upload-container {
+  width: 80%;              /* page ke andar thoda space */
+  margin: 20px 0 0 160px;   /* top 20px, left 40px */
+  padding: 20px;
+  text-align: left;        /* heading aur para left aligned */
+
+}
+.upload-container h2 {
+  font-size: 30px;        /* Heading size */
+  font-weight: bold;      /* Strong heading */
+  margin-bottom: 10px;    /* Gap below heading */
+  color: #333;            /* Dark text */
+}
+
+.upload-container p {
+  font-size: 18px;        /* Smaller paragraph text */
+  color:gray;            /* Grey text for description */
+  margin-bottom: 10px;    /* Gap below paragraph */
+  margin: 20px 0 0 40px;
+}
+
+
+#drop-area {
+  border: 2px dashed #999;
+  border-radius: 10px;
+  padding: 40px;
+  background: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  .drop-text p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+    align-items: center;
+  }
+}
+
+#drop-area:hover {
+  background: #f0f8ff;
+
+}
+
+#fileSelect {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#fileSelect:hover {
+  background: #45a049;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: left;
+}
+
