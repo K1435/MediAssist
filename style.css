@@ -277,3 +277,17 @@ body {
 
   .nav-links::-webkit-scrollbar { display: none; }
 }
+
+
+h1, h2, h3 {
+  font-size: clamp(2rem, 4vw, 6rem);
+}
+p {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  line-height: 1.6;
+}
+
+/* Balanced section padding */
+section {
+  padding: clamp(3rem, 6vw, 8rem) clamp(2rem, 5vw, 12%);
+}
