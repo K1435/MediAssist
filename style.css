@@ -189,7 +189,6 @@ body {
 
 
 
-
 /* Responsive */
 @media (max-width: 900px) {
   .hero-box { flex-direction: column; }
@@ -299,6 +298,87 @@ margin-top: 20px;
   margin-top: 20px;
   text-align: left;
 }
+/* === MOBILE RESPONSIVE FIX === */
 
+/* Stats wale boxes: 2,450+ wale */
+.stats-container {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  overflow-x: auto; /* Phone me horizontal scroll */
 }
+
+.stats-container .card {
+  min-width: 160px; /* Ek box ki width */
+  flex-shrink: 0;   /* Box sikudega nahi */
+}
+
+/* Quick Actions wale 4 boxes */
+.quick-actions-container {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Smooth swipe, Google jaisa */
+}
+
+.quick-actions-container .card {
+  min-width: 260px; /* Phone me 1.2 boxes dikhenge */
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+/* Scrollbar hide karne ke liye - clean dikhega */
+.stats-container::-webkit-scrollbar,
+.quick-actions-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Navbar mobile me scroll ho jaye */
+.navbar {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hero section ka Voice Command box phone me neeche aa jaye */
+.hero-section {
+  display: flex;
+  flex-direction: column; /* Laptop me row, phone me column */
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .actions-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 15px;
+    padding: 10px;
+    scroll-behavior: smooth;
+  }
+
+  .action-card {
+    min-width: 250px;
+    flex: 0 0 auto;
+  }
+}
+.actions-row::-webkit-scrollbar {
+  display: none;
+}
+.actions-row {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.actions-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+
+
 
